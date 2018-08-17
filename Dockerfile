@@ -9,4 +9,4 @@ WORKDIR /termed-api
 RUN mvn package
 
 ENV JAVA_OPTS=""
-ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /termed-api/target/termed-api-1.0-SNAPSHOT-exec.jar" ]
+ENTRYPOINT [ "sh", "-c", "sleep 5 && java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /termed-api/target/termed-api-1.0-SNAPSHOT-exec.jar" ]
