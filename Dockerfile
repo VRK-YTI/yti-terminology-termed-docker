@@ -3,7 +3,7 @@ FROM maven:3.5.0-jdk-8-alpine
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
 
-RUN git clone https://github.com/THLfi/termed-api.git && cd termed-api && git reset --hard b430c18ecc513736366346e6188749abf00727c1
+RUN git clone https://github.com/THLfi/termed-api.git && cd termed-api && git reset --hard 97e4fbfc88925eddc0ea9125ca737155dfa2e5ae
  
 WORKDIR /termed-api
 RUN mvn package
