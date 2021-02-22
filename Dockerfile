@@ -1,4 +1,4 @@
-FROM maven:3.5.0-jdk-8-alpine
+FROM maven:3.5.0-jdk-8-alpine@sha256:c4c0f4b442d110b344f1ff759b945be03734596f76f7b164b567edabd8841594
 
 RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh && apk add --no-cache nss
